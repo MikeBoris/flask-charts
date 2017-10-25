@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Big Trucks</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 <body>
-<h1>Big Trucks</h1>
-<div>
-	
+<div class="container container-fluid">
+  	<h1>Big trucks</h1>
+	<h2>Line chart</h2>
+	<div id="my-chart1"></div>
+
+	<h2>Bar chart</h2>
+  	<div id="my-chart2"></div>
+
+  	<h2>Column chart</h2>
+  	<div id="my-chart3"></div>
+
+  	<h2>Misc chart</h2>
+  	<div id="my-chart4"></div>
+
+  	<h2>Misc chart 2</h2>
+  	<div id="my-chart5"></div>
+
+<script type="text/javascript">
+  {{ chart1|safe }}
+
+  {{ chart2|safe }}
+
+  {{ chart3|safe }} 
+
+  {{ chart4|safe }} 
+
+  {{ chart5|safe }} 
+</script>
 </div>
-	
 </body>
 </html>
